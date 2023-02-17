@@ -1,3 +1,33 @@
-.primary-color {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-weight: 700;
+}
+
+.primary-color,
+.primary-btn {
     background-color: #1090D8;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.primary-btn {
+    width: 350px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+input {
+    background-color: #F1F1F1;
+    border-radius: 4px;
 }
