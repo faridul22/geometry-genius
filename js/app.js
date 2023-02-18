@@ -32,8 +32,17 @@ document.getElementById('parallelogram-calc-btn').addEventListener('click', func
 document.getElementById('rhombus-calc-btn').addEventListener('click', function () {
     serial += 1;
     const nameOfGeometry = document.getElementById('fourth-geometry-title').innerText;
-    const parallelogramBase = getInputValueById('rhombus-diagonal1');
-    const parallelogramHeight = getInputValueById('rhombus-diagonal2');
+    const rhombusDiagonal1 = getInputValueById('rhombus-diagonal1');
+    const rhombusDiagonal2 = getInputValueById('rhombus-diagonal2');
 
-    inputValidationAndSetResult(parallelogramBase, parallelogramHeight, nameOfGeometry, true);
+    inputValidationAndSetResult(rhombusDiagonal1, rhombusDiagonal2, nameOfGeometry, true);
+});
+// Pentagon event handler
+document.getElementById('pentagon-calc-btn').addEventListener('click', function () {
+    serial += 1;
+    const nameOfGeometry = document.getElementById('fifth-geometry-title').innerText;
+    const pentagonP = getInputValueById('pentagon-p');
+    const pentagonB = getInputValueById('pentagon-b');
+
+    inputValidationAndSetResult(pentagonP, pentagonB, nameOfGeometry, true);
 });
