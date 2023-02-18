@@ -46,3 +46,21 @@ document.getElementById('pentagon-calc-btn').addEventListener('click', function 
 
     inputValidationAndSetResult(pentagonP, pentagonB, nameOfGeometry, true);
 });
+
+// Ellipse event handler
+document.getElementById('ellipse-calc-btn').addEventListener('click', function () {
+    serial += 1;
+    const nameOfGeometry = document.getElementById('sixth-geometry-title').innerText;
+    const ellipseA = getInputValueById('ellipse-a');
+    const ellipseB = getInputValueById('ellipse-b');
+    if (isNaN(ellipseA) || isNaN(ellipseB) || ellipseA < 0 || ellipseB < 0) {
+        return alert('Please enter a valid input number');
+    }
+    else {
+        const ellipseArea = 3.14 * ellipseA * ellipseB;
+        const fixedEllipseArea = ellipseArea.toFixed(2);
+        setResultSiteNavBar(nameOfGeometry, fixedEllipseArea)
+    }
+
+    // inputValidationAndSetResult(pentagonP, pentagonB, nameOfGeometry, true);
+});

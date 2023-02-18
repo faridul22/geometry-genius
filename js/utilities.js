@@ -37,9 +37,9 @@ function inputValidationAndSetResult(firstInputValue, secondInputValue, nameOfGe
 
 function setResultSiteNavBar(nameOfGeometry, calculateResult) {
     const areaCalculationContainer = document.getElementById('area-container');
-    const div = document.createElement('ol');
+    const div = document.createElement('div');
     div.innerHTML = `
-    <p class="mt-3">
+    <p class="mt-3 text-start">
         <span class="me-2">${serial}</span>
         <span class="me-2">${nameOfGeometry}</span>
         <small class="me-2">${calculateResult}cm<sup>2</sup></small>
