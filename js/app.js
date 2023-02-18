@@ -1,3 +1,8 @@
+// blog 
+document.getElementById('blog-btn').addEventListener('click', function () {
+    window.location.href = 'blog.html'
+})
+
 let serial = 0;
 // Triangle Event handler 
 document.getElementById('triangle-calc-btn').addEventListener('click', function () {
@@ -62,5 +67,4 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function (
         setResultSiteNavBar(nameOfGeometry, fixedEllipseArea)
     }
 
-    // inputValidationAndSetResult(pentagonP, pentagonB, nameOfGeometry, true);
 });

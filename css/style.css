@@ -53,7 +53,7 @@ input {
 /*  Medium devices */
 @media only screen and (min-width: 768px) {
     #calculation-section {
-        /* height: 1000px; */
+        margin-top: 20px;
     }
 
     .primary-btn {
