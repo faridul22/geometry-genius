@@ -8,3 +8,13 @@ document.getElementById('triangle-calc-btn').addEventListener('click', function 
 
     inputValidationAndSetResult(triangleBase, triangleHeight, nameOfGeometry, true);
 });
+
+// Rectangle Event handler
+document.getElementById('rectangle-calc-btn').addEventListener('click', function () {
+
+    const nameOfGeometry = document.getElementById('second-geometry-title').innerText;
+    const rectangleWidth = getInputValueById('rectangle-width');
+    const rectangleLength = getInputValueById('rectangle-length');
+
+    inputValidationAndSetResult(rectangleWidth, rectangleLength, nameOfGeometry, false);
+});
