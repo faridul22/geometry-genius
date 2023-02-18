@@ -18,7 +18,7 @@ document.getElementById('rectangle-calc-btn').addEventListener('click', function
 
     inputValidationAndSetResult(rectangleWidth, rectangleLength, nameOfGeometry, false);
 });
-// third-geometry-title
+// parallelogram event handler
 document.getElementById('parallelogram-calc-btn').addEventListener('click', function () {
     serial += 1;
     const nameOfGeometry = document.getElementById('third-geometry-title').innerText;
@@ -26,4 +26,14 @@ document.getElementById('parallelogram-calc-btn').addEventListener('click', func
     const parallelogramHeight = getInputValueById('parallelogram-height');
 
     inputValidationAndSetResult(parallelogramBase, parallelogramHeight, nameOfGeometry, false);
+});
+
+// Rhombus event handler
+document.getElementById('rhombus-calc-btn').addEventListener('click', function () {
+    serial += 1;
+    const nameOfGeometry = document.getElementById('fourth-geometry-title').innerText;
+    const parallelogramBase = getInputValueById('rhombus-diagonal1');
+    const parallelogramHeight = getInputValueById('rhombus-diagonal2');
+
+    inputValidationAndSetResult(parallelogramBase, parallelogramHeight, nameOfGeometry, true);
 });
