@@ -40,7 +40,7 @@ function setResultSiteNavBar(nameOfGeometry, calculateResult) {
     const div = document.createElement('ol');
     div.innerHTML = `
     <p class="mt-3">
-        
+        <span class="me-2">${serial}</span>
         <span class="me-2">${nameOfGeometry}</span>
         <small class="me-2">${calculateResult}cm<sup>2</sup></small>
         <span class="me-2 primary-color py-1 px-2 rounded-1">Convert to m<sup>2</sup></span>
