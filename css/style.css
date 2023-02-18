@@ -22,7 +22,7 @@ button {
 }
 
 .primary-btn {
-    padding: 1rem 3rem;
+    padding: 0.5rem 6rem;
     border-radius: 8px;
 }
 
@@ -33,22 +33,30 @@ input {
 
 /* aside style */
 #calculation-section {
-    width: 12em;
-    height: 23em;
-    margin-right: 10px;
+    width: 100%;
+    height: 50%;
+    /* padding: 0 0px; */
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width: 576px) {
     .primary-btn {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 2rem;
         border-radius: 8px;
     }
 
     #calculation-section {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
-/* @media only screen  and(min-width:577px){
-    
-} */
+@media only screen and (min-width: 768px) {
+    #calculation-section {
+
+        margin-top: 20px;
+    }
+
+    .primary-btn {
+        padding: 0.5rem 3rem;
+        border-radius: 8px;
+    }
+}
